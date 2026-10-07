@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Varuna C R | Creative Portfolio</title>
+
+<meta name="description"
+content="Creative portfolio of Varuna C R — Freelance Creative Visual Designer and founder of VISUAL MOMENTUM. Poster design, social media visuals, creative content and digital marketing support.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --cream:#faf8f4; --white:#fff; --dark:#292f2d; --muted:#68716e;
+  --rose:#d9b8b5; --lavender:#c9c3dc; --sage:#b9cdbf; --blue:#bfd4e5;
+  --line:#e5e0d9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--dark);font-family:"DM Sans",sans-serif;line-height:1.7}
+.container{width:min(1120px,92%);margin:auto}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:100;background:rgba(250,248,244,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:2px}.logo span{color:#817a96}
+.links{display:flex;gap:28px;font-size:14px;font-weight:600}.links a:hover{opacity:.55}
+.hero{padding:105px 0 95px}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:70px;align-items:center}
+.tag{display:inline-block;padding:7px 15px;border-radius:30px;background:var(--lavender);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:25px}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(50px,7vw,86px);line-height:1;font-weight:600}
+.hero h1 em{font-style:normal;color:#817a96}
+.hero h2{margin-top:25px;font-size:21px;font-weight:600}
+.hero p{max-width:650px;color:var(--muted);font-size:17px;margin-top:15px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.button{display:inline-block;padding:13px 22px;border-radius:10px;border:1px solid var(--dark);font-size:14px;font-weight:700}
+.button.dark{background:var(--dark);color:white}.button.light{background:white}
+.vm-card{padding:42px;border-radius:28px;background:linear-gradient(145deg,var(--sage),var(--blue))}
+.vm-logo{width:80px;height:80px;display:flex;align-items:center;justify-content:center;border-radius:22px;background:rgba(255,255,255,.75);font-size:27px;font-weight:700;margin-bottom:30px}
+.vm-card h3{font-family:"Playfair Display",serif;font-size:31px}.vm-card p{margin-top:10px;font-size:14px;color:#48524e}
+section{padding:85px 0}.section-label{color:#817a96;font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700}
+.section-title{font-family:"Playfair Display",serif;font-size:45px;line-height:1.15;margin-top:8px}
+.section-intro{color:var(--muted);max-width:680px;margin-top:12px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}.about p{color:var(--muted);margin-bottom:18px}
+.about-box{background:white;border:1px solid var(--line);border-radius:20px;padding:32px}
+.about-box h3{font-family:"Playfair Display",serif;font-size:28px;margin-bottom:18px}
+.about-box ul{list-style:none}.about-box li{padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}.about-box li:last-child{border-bottom:none}
+.services{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service{background:white;border:1px solid var(--line);border-radius:18px;padding:28px 22px;min-height:210px}
+.service-number{color:#817a96;font-weight:700;font-size:12px}.service h3{margin-top:28px;font-size:19px}.service p{color:var(--muted);font-size:14px;margin-top:8px}
+.work{margin-top:45px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.work-card{min-height:280px;border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(41,47,45,.08);transition:.25s ease}
+.work-card:hover{transform:translateY(-5px)}
+.work-card:nth-child(1){background:var(--rose)}.work-card:nth-child(2){background:var(--lavender)}.work-card:nth-child(3){background:var(--sage)}
+.work-card:nth-child(4){background:var(--blue)}.work-card:nth-child(5){background:#eadfd0}.work-card:nth-child(6){background:#ddd7c9}
+.work-card small{text-transform:uppercase;letter-spacing:1.5px;font-size:10px;font-weight:700}
+.work-card h3{font-family:"Playfair Display",serif;font-size:28px;margin-top:5px}
+.work-note{margin-top:25px;color:var(--muted);font-size:14px}
+.process{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.process-card{background:white;border:1px solid var(--line);border-radius:18px;padding:30px}
+.process-number{font-family:"Playfair Display",serif;font-size:32px}.process-card h3{margin-top:12px}.process-card p{color:var(--muted);font-size:14px;margin-top:6px}
+.cta{background:linear-gradient(135deg,var(--rose),var(--lavender));border-radius:28px;padding:65px 30px;text-align:center}
+.cta h2{font-family:"Playfair Display",serif;font-size:48px}.cta p{max-width:600px;margin:10px auto 25px;color:#4d5552}
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px}
+.contact-card{background:white;border:1px solid var(--line);border-radius:17px;padding:25px}
+.contact-card span{display:block;color:#817a96;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:700;margin-bottom:5px}
+.contact-card strong{font-size:16px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:13px}
+.footer{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.work{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:1fr}}
+@media(max-width:600px){.links{display:none}.hero{padding:70px 0}.hero h1{font-size:52px}section{padding:60px 0}.section-title{font-size:37px}.services,.work,.contact{grid-template-columns:1fr}.cta{padding:45px 22px}.cta h2{font-size:38px}.footer{flex-direction:column}}
+</style>
+</head>
+
+<body>
+<nav>
+  <div class="container nav">
+    <a href="#home" class="logo">VARUNA <span>C R</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="tag">Creative Visual Designer</div>
+      <h1>Ideas,<br><em>made visible.</em></h1>
+      <h2>Varuna C R — Founder, VISUAL MOMENTUM</h2>
+      <p>I create professional visual content for businesses, social-media platforms, campaigns and digital projects.</p>
+      <div class="hero-buttons">
+        <a href="#work" class="button dark">Explore My Work</a>
+        <a href="#contact" class="button light">Work With Me</a>
+      </div>
+    </div>
+
+    <div class="vm-card">
+      <div class="vm-logo">VM</div>
+      <h3>VISUAL MOMENTUM</h3>
+      <p>Poster Design<br>Social Media Visuals<br>Creative Content<br>Digital Marketing Support</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">About the Designer</div>
+    <h2 class="section-title">Creative thinking,<br>visual communication.</h2>
+
+    <div class="about" style="margin-top:40px;">
+      <div>
+        <p>I am <strong>Varuna C R</strong>, a freelance creative visual designer and founder of <strong>VISUAL MOMENTUM</strong>.</p>
+        <p>My focus is simple: turn ideas, messages and concepts into visuals that are clear, attractive and purposeful.</p>
+        <p>I create poster designs, social-media visuals, creative content and provide digital marketing support for businesses and digital projects.</p>
+        <p>I am open to freelance, contract and remote collaborations with businesses, creative teams and agencies.</p>
+      </div>
+
+      <div class="about-box">
+        <h3>Creative Focus</h3>
+        <ul>
+          <li>Poster &amp; Campaign Design</li>
+          <li>Social Media Visuals</li>
+          <li>Creative Content Concepts</li>
+          <li>Awareness &amp; Promotional Creatives</li>
+          <li>Digital Marketing Support</li>
+          <li>Remote Freelance Projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-label">What I Do</div>
+    <h2 class="section-title">Creative services.</h2>
+    <p class="section-intro">Focused creative support for businesses, social-media communication and digital campaigns.</p>
+
+    <div class="services">
+      <div class="service"><div class="service-number">01</div><h3>Poster Design</h3><p>Promotional, campaign, event and awareness posters.</p></div>
+      <div class="service"><div class="service-number">02</div><h3>Social Media Visuals</h3><p>Creative visuals designed for digital platforms.</p></div>
+      <div class="service"><div class="service-number">03</div><h3>Creative Content</h3><p>Visual concepts and content ideas for communication.</p></div>
+      <div class="service"><div class="service-number">04</div><h3>Digital Marketing Support</h3><p>Creative support for social-media and digital campaigns.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <div class="section-label">Selected Work</div>
+    <h2 class="section-title">A collection of visual ideas.</h2>
+    <p class="section-intro">Selected creative directions developed through VISUAL MOMENTUM.</p>
+
+    <div class="work">
+      <div class="work-card"><small>Business</small><h3>Business Visuals</h3></div>
+      <div class="work-card"><small>Campaign</small><h3>Campaign Concepts</h3></div>
+      <div class="work-card"><small>Marketing</small><h3>Marketing Creatives</h3></div>
+      <div class="work-card"><small>Awareness</small><h3>Awareness Posts</h3></div>
+      <div class="work-card"><small>Social Media</small><h3>Content Series</h3></div>
+      <div class="work-card"><small>Creative</small><h3>Creative Concepts</h3></div>
+    </div>
+
+    <p class="work-note">30+ original social-media visual concepts developed across different creative themes and communication needs.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">How I Work</div>
+    <h2 class="section-title">From idea to visual.</h2>
+
+    <div class="process">
+      <div class="process-card"><div class="process-number">01</div><h3>Understand</h3><p>Understand the message, audience and objective.</p></div>
+      <div class="process-card"><div class="process-number">02</div><h3>Create</h3><p>Develop a visual direction that fits the idea.</p></div>
+      <div class="process-card"><div class="process-number">03</div><h3>Deliver</h3><p>Deliver the agreed creative work in a professional format.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>Have an idea?</h2>
+      <p>Let's turn it into a visual that gets noticed.</p>
+      <a href="mailto:visualmomentum.media@gmail.com" class="button dark">Start a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's create something.</h2>
+    <p class="section-intro">Available for freelance, contract and remote creative projects.</p>
+
+    <div class="contact">
+      <a class="contact-card" href="mailto:visualmomentum.media@gmail.com">
+        <span>Email</span><strong>visualmomentum.media@gmail.com</strong>
+      </a>
+
+      <a class="contact-card" href="https://www.instagram.com/_visual_momentum_/" target="_blank" rel="noopener">
+        <span>Instagram</span><strong>@_visual_momentum_</strong>
+      </a>
+
+      <div class="contact-card"><span>Creative Identity</span><strong>VISUAL MOMENTUM</strong></div>
+      <div class="contact-card"><span>Availability</span><strong>Freelance • Contract • Remote</strong></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>© 2026 Varuna C R</span>
+    <span>VISUAL MOMENTUM — Creative Visual Design</span>
+  </div>
+</footer>
+
+</body>
+</html>
